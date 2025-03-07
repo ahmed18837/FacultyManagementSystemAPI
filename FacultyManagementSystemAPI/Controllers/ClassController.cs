@@ -17,6 +17,10 @@ namespace FacultyManagementSystemAPI.Controllers
         [HttpPut("AssignCourseToProfessor")]
         public async Task<IActionResult> AssignCourseToProfessor([FromBody] AssignClassRequestDto assignClassRequest)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             try
             {
                 await _classService.AssignCourseToProfessorAsync(assignClassRequest.CourseId, assignClassRequest.ProfessorName);

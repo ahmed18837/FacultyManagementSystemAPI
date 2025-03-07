@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace FacultyManagementSystemAPI.Migrations
 {
     /// <inheritdoc />
-    public partial class LastAdd : Migration
+    public partial class All : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -191,7 +191,6 @@ namespace FacultyManagementSystemAPI.Migrations
                     Id = table.Column<int>(type: "int", nullable: false, defaultValueSql: "NEXT VALUE FOR dbo.CommonSequence"),
                     Semester = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     NumberOFSemster = table.Column<int>(type: "int", nullable: false),
-                    FinalGrade = table.Column<decimal>(type: "decimal(10,2)", nullable: true),
                     Exam1Grade = table.Column<decimal>(type: "decimal(10,2)", nullable: true),
                     Exam2Grade = table.Column<decimal>(type: "decimal(10,2)", nullable: true),
                     Grade = table.Column<decimal>(type: "decimal(10,2)", nullable: true),

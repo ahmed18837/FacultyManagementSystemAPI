@@ -22,6 +22,7 @@ namespace FacultyManagementSystemAPI.Repositories.Implementes
                     Description = c.Course.Description,
                     Credits = c.Course.Credits,
                     Status = c.Course.Status,
+                    Code = c.Course.Code,
                     Semester = c.Course.Semester,
                     CurrentEnrolledStudents = c.Course.CurrentEnrolledStudents,
                     MaxSeats = c.Course.MaxSeats,
